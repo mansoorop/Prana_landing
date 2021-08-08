@@ -11,9 +11,39 @@ import {
   Button,
   Stack,
   Icon,
+  Textarea,
+  FormControl,
+  FormLabel,
+  FormErrorMessage
 } from "@chakra-ui/react";
 
+import { useForm } from "react-hook-form";
+
 const Newsletter = () => {
+  const {
+    handleSubmit,
+    register,
+    formState: { errors, isSubmitting }
+  } = useForm();
+  async function  onSubmit (event){
+    console.log(event)
+    const res = await fetch(
+      'https://api.jotform.com/form/212194224835050/submissions?apiKey=643f71ab871251b62d9af4e291f01c11',
+      {
+        body: JSON.stringify({
+          "submission[3]": event.email,
+          "submission[4]": event.feedback
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'POST'
+      }
+    )
+      alert("Feedback Submitted")
+    const result = await res.json()
+    // result.user => 'Ada Lovelace'
+  }
   const Feature = (props) => (
     <Flex alignItems="center" color={useColorModeValue("gray.900", "gray.300")}>
       <Icon
@@ -33,7 +63,7 @@ const Newsletter = () => {
     </Flex>
   );
   return (
-    <Box px={4} py={32} mx="auto"   bg={useColorModeValue("gray.50","gray.800")}
+    <Box px={4} py={32} mx="auto" bg={useColorModeValue("gray.50", "gray.800")}
     >
       <Box
         w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
@@ -55,43 +85,82 @@ const Newsletter = () => {
           color={useColorModeValue("gray.900", "gray.300")}
           lineHeight="base"
         >
-          We’re on a mission to bring credebility without corporations. Subscribe to our newsletter to stay updated. 
+          We’re on a mission to bring credebility without corporations. Subscribe to our newsletter to stay updated.
           {/* little as possible, and we always show you upfront. No hidden fees. No
           bad exchange rates. No surprises. */}
         </chakra.p>
-        <SimpleGrid
-          as="form"
-          w={{ base: "full", md: 7 / 12 }}
-          columns={{ base: 1, lg: 6 }}
-          spacing={3}
-          pt={1}
-          mx="auto"
-          mb={8}
-        >
-          <GridItem as="label" colSpan={{ base: "auto", lg: 4 }}>
-            <VisuallyHidden>Your Email</VisuallyHidden>
-            <Input
-              mt={0}
-              size="lg"
-              type="email"
-              placeholder="Enter your email..."
-              required={true}
-              color={useColorModeValue("gray.900", "gray.100")}
 
-            />
-          </GridItem>
-          <Button
-            as={GridItem}
-            w="full"
-            variant="solid"
-            colSpan={{ base: "auto", lg: 2 }}
-            size="lg"
-            type="submit"
-            colorScheme="brand"
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <SimpleGrid
+            w={{ base: "full", md: 7 / 12 }}
+            columns={1}
+            spacing={3}
+            pt={1}
+            mx="auto"
+            mb={8}
           >
-            Get Started
+            <FormControl isInvalid={errors.name}>
+=              <GridItem as="label" colSpan={{ base: "auto", lg: 8 }}>
+                <VisuallyHidden>Your Email</VisuallyHidden>
+
+                <Input
+                  id="email"
+                  mt={0}
+                  size="lg"
+                  type="email"
+                  placeholder="Enter your email..."
+                  color={useColorModeValue("gray.900", "gray.100")}
+                  {...register("email", {
+                    required: "This is required",
+                  })}
+                />
+   <FormErrorMessage>
+                {errors.email && errors.email.message}
+              </FormErrorMessage>
+              </GridItem>
+
+           
+            </FormControl>
+            <FormControl isInvalid={errors.name}>
+              <GridItem as="label" colSpan={{ base: "auto", lg: 8 }} >
+                <VisuallyHidden>Feedback</VisuallyHidden>
+                <FormControl>
+
+                  <Textarea
+                    id="feedback"
+                    mt={0}
+                    size="sm"
+                    type="text"
+                    placeholder="Enter your feddback..."
+                    color={useColorModeValue("gray.900", "gray.100")}
+                    {...register("feedback", {
+                      required: "This is required",
+                    })}
+                  />
+                </FormControl>
+
+                <FormErrorMessage>
+                {errors.feedback && errors.feedback.message}
+              </FormErrorMessage>
+              </GridItem>
+
+            </FormControl>
+
+            <Button
+              w="full"
+              variant="solid"
+              colSpan={{ base: "auto", lg: 2 }}
+              size="lg"
+              colorScheme="brand"
+              isLoading={isSubmitting} 
+              type="submit"
+              value="Submit" 
+            >
+              Submit
           </Button>
-        </SimpleGrid>
+          </SimpleGrid>
+        </form>
+
         <Stack
           display="flex"
           direction={{ base: "column", md: "row" }}
