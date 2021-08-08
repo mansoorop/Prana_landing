@@ -75,7 +75,7 @@ const Newsletter = () => {
           color={useColorModeValue("gray.900", "gray.300")}
           lineHeight="shorter"
         >
-          Stay informed and pay attention to what matters.
+         Let us know if you’re excited about what we’re building!
         </chakra.h1>
         <chakra.p
           mb={6}
@@ -83,7 +83,7 @@ const Newsletter = () => {
           color={useColorModeValue("gray.900", "gray.300")}
           lineHeight="base"
         >
-          We’re on a mission to bring credebility without corporations. Subscribe to our newsletter to stay updated.
+          The project is close to launch, and we’d love to know if you’re interested in becoming an early adopter of the platform.
           {/* little as possible, and we always show you upfront. No hidden fees. No
           bad exchange rates. No surprises. */}
         </chakra.p>
@@ -169,9 +169,9 @@ const Newsletter = () => {
           color={useColorModeValue("gray.900", "gray.100")}
 
         >
-          <Feature>New listings notified</Feature>
+          {/* <Feature>New updates notified</Feature>
           <Feature>Get trending accounts</Feature>
-          <Feature>Cancel anytime</Feature>
+          <Feature>Cancel anytime</Feature> */}
         </Stack>
       </Box>
     </Box>

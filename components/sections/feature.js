@@ -140,7 +140,7 @@ export default function Feature() {
               color={useColorModeValue("gray.900", "gray.300")}
               lineHeight={{ md: "shorter" }}
             >
-             Adding more depth to your copies.Adding more depth to your copies.
+             Adding more depth to your copies.
             </chakra.h2>
             <chakra.p
               mb={5}
