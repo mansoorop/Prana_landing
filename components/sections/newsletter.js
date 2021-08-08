@@ -25,22 +25,20 @@ const Newsletter = () => {
     register,
     formState: { errors, isSubmitting }
   } = useForm();
-  async function  onSubmit (event){
+  async function onSubmit(event) {
     console.log(event)
     const res = await fetch(
       'https://api.jotform.com/form/212194224835050/submissions?apiKey=643f71ab871251b62d9af4e291f01c11',
       {
-        body: JSON.stringify({
-          "submission[3]": event.email,
-          "submission[4]": event.feedback
-        }),
+        body: `submission[3]=${event.email}&submission[4]=${event.feedback}`
+        ,
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/x-www-form-urlencoded"
         },
         method: 'POST'
       }
     )
-      alert("Feedback Submitted")
+    alert("Feedback Submitted")
     const result = await res.json()
     // result.user => 'Ada Lovelace'
   }
@@ -100,7 +98,7 @@ const Newsletter = () => {
             mb={8}
           >
             <FormControl isInvalid={errors.name}>
-=              <GridItem as="label" colSpan={{ base: "auto", lg: 8 }}>
+              =              <GridItem as="label" colSpan={{ base: "auto", lg: 8 }}>
                 <VisuallyHidden>Your Email</VisuallyHidden>
 
                 <Input
@@ -114,12 +112,12 @@ const Newsletter = () => {
                     required: "This is required",
                   })}
                 />
-   <FormErrorMessage>
-                {errors.email && errors.email.message}
-              </FormErrorMessage>
+                <FormErrorMessage>
+                  {errors.email && errors.email.message}
+                </FormErrorMessage>
               </GridItem>
 
-           
+
             </FormControl>
             <FormControl isInvalid={errors.name}>
               <GridItem as="label" colSpan={{ base: "auto", lg: 8 }} >
@@ -140,8 +138,8 @@ const Newsletter = () => {
                 </FormControl>
 
                 <FormErrorMessage>
-                {errors.feedback && errors.feedback.message}
-              </FormErrorMessage>
+                  {errors.feedback && errors.feedback.message}
+                </FormErrorMessage>
               </GridItem>
 
             </FormControl>
@@ -152,9 +150,9 @@ const Newsletter = () => {
               colSpan={{ base: "auto", lg: 2 }}
               size="lg"
               colorScheme="brand"
-              isLoading={isSubmitting} 
+              isLoading={isSubmitting}
               type="submit"
-              value="Submit" 
+              value="Submit"
             >
               Submit
           </Button>
