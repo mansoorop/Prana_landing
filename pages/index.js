@@ -19,7 +19,7 @@ export default function Index() {
         {/* <Brand/> */}
         <Newsletter/>
 
-        <Footer/>
+        {/* <Footer/> */}
 
 
         
