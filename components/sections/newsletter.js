@@ -131,7 +131,7 @@ const Newsletter = () => {
                     mt={0}
                     size="sm"
                     type="text"
-                    placeholder="Enter your feddback..."
+                    placeholder="Enter your feedback..."
                     color={useColorModeValue("gray.900", "gray.100")}
                     {...register("feedback", {
                       required: "This is required",
