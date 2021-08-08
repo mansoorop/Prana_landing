@@ -39,7 +39,7 @@ const Hero = () => {
       
         <chakra.h2
           fontSize={{ base: "3xl", sm: "4xl" }}
-          fontWeight="extrabold"
+          fontWeight="bold"
           letterSpacing="normal"
           lineHeight="shorter"
           color={useColorModeValue("gray.500", "gray.100")}
@@ -47,9 +47,9 @@ const Hero = () => {
           mb={6}
         >
           <chakra.span display="block" color={useColorModeValue("brand.500", "brand.100")} >
-          Voice your trust
+          Your ebooks are yours, period.
           </chakra.span>
-          <Text
+          {/* <Text
             display={{ base: "block", lg: "inline" }}
             w="full"
             bgClip="text"
@@ -57,7 +57,7 @@ const Hero = () => {
             fontWeight="extrabold"
           >
             Tune into what matters
-          </Text>
+          </Text> */}
         
         </chakra.h2>
         <chakra.p
@@ -66,9 +66,7 @@ const Hero = () => {
           color={useColorModeValue("gray.800", "gray.100")}
           fontWeight="light"
         >
-          Vote with your dollars, and give underrated voices the visibility they deserve.
-          Hellonext is a feature voting software where you can allow your users to vote on features, publish roadmap, 
-          and complete your customer feedback loop.
+         We believe that you as consumers should have ultimate freedom over the ebook copies that you’ve bought. An ebook should behave pretty much the same as a paperback, minus the carbon footprint and luggage space.
         </chakra.p>
         <Stack
           direction={{ base: "column", sm: "row" }}
@@ -121,7 +119,7 @@ const Hero = () => {
               }}
             >
               <FaPlayCircle/> &nbsp;
-              Watch Video
+              Watch Demo Video
             </chakra.a>
        
           </Box>

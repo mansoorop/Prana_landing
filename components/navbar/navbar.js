@@ -35,7 +35,7 @@ export default function Gslr() {
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="md"
-        borderTop="6px solid "
+        borderTop="4px solid "
         borderTopColor={useColorModeValue("brand.300", "brand.400")}
         overflowY="hidden"
         // borderBottomWidth={2}
