@@ -171,9 +171,9 @@ const Newsletter = () => {
           color={useColorModeValue("gray.900", "gray.100")}
 
         >
-          <Feature>New listings notified</Feature>
+          {/* <Feature>New updates notified</Feature>
           <Feature>Get trending accounts</Feature>
-          <Feature>Cancel anytime</Feature>
+          <Feature>Cancel anytime</Feature> */}
         </Stack>
       </Box>
     </Box>
