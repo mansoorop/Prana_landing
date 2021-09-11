@@ -101,7 +101,7 @@ const Hero = () => {
 
           <Box display="inline-flex" rounded="md" shadow="md">
             <chakra.a
-              href="https://www.youtube.com/watch?v=ixTZoLE8J2Q"
+              href="https://youtu.be/irXbIYsadpo"
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
