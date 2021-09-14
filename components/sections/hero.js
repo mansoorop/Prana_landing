@@ -76,7 +76,7 @@ const Hero = () => {
           <Box display="inline-flex" rounded="md" shadow="md">
         
               <chakra.a
-              href="https://pranah.on.fleek.co/"
+              href="https://app.pranah.co/"
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
