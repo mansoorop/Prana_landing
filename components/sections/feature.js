@@ -59,7 +59,7 @@ export default function Feature() {
               mx={{ lg: "auto" }}
               color={useColorModeValue("gray.500", "gray.400")}
             >
-              To help achieve this, Each copy of books are represented by an NFT(non-fungible token) on the blockchain to give it a unique identity.
+            To achieve this, each copy of ebooks is represented by an NFT(non-fungible token) on the blockchain to give it a unique identity.
             </chakra.p>
           </Box>
 
@@ -90,9 +90,12 @@ export default function Feature() {
               color={useColorModeValue("gray.600", "gray.400")}
               fontSize={{ md: "lg" }}
             >
-              Just like how you can resell your paperbacks or give it away to your loved ones, you 
+              {/* Just like how you can resell your paperbacks or give it away to your loved ones, you 
             <span>are entitled to do whatever you want with your copy of the ebook that you bought.
-            </span>
+            </span> */}
+            Just like how you can resell your paperbacks or give it away to your loved ones, you are entitled to do whatever you want with your copy of the ebook that you bought.
+
+            Now, suddenly, you can rent your ebook to a stranger across the globe, and with the guarantee that you’ll get it back in time ;)
             </chakra.p>
             {/* <Button
               w={{ base: "full", sm: "auto" }}
