@@ -66,7 +66,7 @@ const Hero = () => {
           color={useColorModeValue("gray.800", "gray.100")}
           fontWeight="light"
         >
-         We believe that consumers should have ultimate freedom over the ebook copies they bought. An ebook should behave pretty much the same as a paperback, minus the carbon footprint and luggage space.
+         We believe that consumers should have ultimate freedom over the ebook copies they own. An ebook should behave pretty much the same as a paperback, minus the carbon footprint and luggage space.
         </chakra.p>
         <Stack
           direction={{ base: "column", sm: "row" }}
