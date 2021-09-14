@@ -94,7 +94,8 @@ export default function Feature() {
             <span>are entitled to do whatever you want with your copy of the ebook that you bought.
             </span> */}
             Just like how you can resell your paperbacks or give it away to your loved ones, you are entitled to do whatever you want with your copy of the ebook that you bought.
-
+            <br/>
+            <br/>
             Now, suddenly, you can rent your ebook to a stranger across the globe, and with the guarantee that you’ll get it back in time ;)
             </chakra.p>
             {/* <Button
