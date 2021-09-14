@@ -122,62 +122,7 @@ export default function Feature() {
 
       
         <SlideRight>
-        <SimpleGrid
-          alignItems="center"
-          columns={{ base: 1, md: 2 }}
-          flexDirection="column-reverse"
-          mb={24}
-          spacingY={{ base: 10, md: 32 }}
-          spacingX={{ base: 10, md: 24 }}
-        >
-          <Box order={{ base: "none", md: 2 }}>
-            <chakra.h2
-              mb={4}
-              fontSize={{ base: "2xl", md: "4xl" }}
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              textAlign={{ base: "center", md: "left" }}
-              color={useColorModeValue("gray.900", "gray.300")}
-              lineHeight={{ md: "shorter" }}
-            >
-             Adding more depth to your copies.
-            </chakra.h2>
-            <chakra.p
-              mb={5}
-              textAlign={{ base: "center", sm: "left" }}
-              color={useColorModeValue("gray.600", "gray.400")}
-              fontSize={{ md: "lg" }}
-            >
-              Adding an additional layer to your ebooks, now you can know which copy of the title you’d brought: whether it’s the very first copy that’s ever sold, or the 1 millionth copy. And you’re more than welcome to monetize on that aspect!
-            </chakra.p>
-            {/* <Button
-              w={{ base: "full", sm: "auto" }}
-              size="lg"
-              bg={useColorModeValue("gray.900", "gray.700")}
-              _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
-              color={useColorModeValue("gray.100", "gray.200")}
-              as="a"
-              target="_blank"
-
-              href="https://docs.ideamarket.io/user-guide/hiw-buy-and-sell"
-            >
-              Learn More
-            </Button> */}
-          </Box>
-          <Box>
-            <Image
-            w="full"
-            rounded="lg"
-            shadow="2xl"
-            border=" none"
-            src="profile.png">
-            </Image>
-          </Box>
-        </SimpleGrid>
-        </SlideRight>
-
-       <SlideLeft>
-
+        
         <SimpleGrid
           alignItems="start"
           columns={{ base: 1, md: 2 }}
@@ -203,7 +148,7 @@ export default function Feature() {
               color={useColorModeValue("gray.600", "gray.400")}
               fontSize={{ md: "lg" }}
             >
-               the amalgamation of the reader’s mind with that of the book.
+               The amalgamation of the reader’s mind with that of the book.
                Annotations are the soul of a book - each copy comes alive with the 
                unique annotations that its users add to it over time. These annotations 
                travel with the copies when they change hands. A story within a story. 
@@ -227,6 +172,65 @@ export default function Feature() {
             </Image>
           </Box>
         </SimpleGrid>
+
+
+        
+        </SlideRight>
+
+       <SlideLeft>
+       <SimpleGrid
+          alignItems="center"
+          columns={{ base: 1, md: 2 }}
+          flexDirection="column-reverse"
+          mb={24}
+          spacingY={{ base: 10, md: 32 }}
+          spacingX={{ base: 10, md: 24 }}
+        >
+          <Box order={{ base: "none", md: 2 }}>
+            <chakra.h2
+              mb={4}
+              fontSize={{ base: "2xl", md: "4xl" }}
+              fontWeight="extrabold"
+              letterSpacing="tight"
+              textAlign={{ base: "center", md: "left" }}
+              color={useColorModeValue("gray.900", "gray.300")}
+              lineHeight={{ md: "shorter" }}
+            >
+             Adding more depth to your copies.
+            </chakra.h2>
+            <chakra.p
+              mb={5}
+              textAlign={{ base: "center", sm: "left" }}
+              color={useColorModeValue("gray.600", "gray.400")}
+              fontSize={{ md: "lg" }}
+            >
+              Adding an additional layer to your ebooks, now you can know which copy of the title you have bought: whether it’s the very first copy that’s ever sold, or the 1 millionth copy. And you’re more than welcome to monetize on that aspect!
+            </chakra.p>
+            {/* <Button
+              w={{ base: "full", sm: "auto" }}
+              size="lg"
+              bg={useColorModeValue("gray.900", "gray.700")}
+              _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
+              color={useColorModeValue("gray.100", "gray.200")}
+              as="a"
+              target="_blank"
+
+              href="https://docs.ideamarket.io/user-guide/hiw-buy-and-sell"
+            >
+              Learn More
+            </Button> */}
+          </Box>
+          <Box>
+            <Image
+            w="full"
+            rounded="lg"
+            shadow="2xl"
+            border=" none"
+            src="profile.png">
+            </Image>
+          </Box>
+        </SimpleGrid>
+        
         </SlideLeft>      </Box>
       
     </Flex>
