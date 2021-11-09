@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import {FaPlus , FaPlayCircle} from "react-icons/fa";
 import {MdLaunch} from "react-icons/md";
+import {MdPersonAddAlt} from "react-icons/md";
 
 
 import { motion } from "framer-motion";
@@ -70,7 +71,7 @@ const Hero = () => {
         </chakra.p>
         <Stack
           direction={{ base: "column", sm: "row" }}
-          mb={{ base: 4, md: 8 }}
+          mb={{ base: 3, md: 6 }}
           spacing={2}
         >
           <Box display="inline-flex" rounded="md" shadow="md">
@@ -124,10 +125,68 @@ const Hero = () => {
        
           </Box>
 
+          {/* <Box display="inline-flex" rounded="md" shadow="md">
+        
+        <chakra.a
+        href="https://app.pranah.co/"
+        display="inline-flex"
+        alignItems="center"
+        justifyContent="center"
+        px={5}
+        py={3}
+        
+        border="solid transparent"
+        fontWeight="bold"
+        w="full"
+        rounded="md"
+        color={useColorModeValue("white" , "gray.50")}
+        bg={useColorModeValue("brand.400", "brand.300")}
+        _hover={{
+          bg: useColorModeValue("brand.300", "brand.400"),
+        }}
+      >
+        <MdPersonAddAlt/> &nbsp;
+         Onboarding
+      </chakra.a>
+    </Box> */}
+
+        
+          
+        </Stack>
+
+    
+      <HStack
+      background="gray.900"
+      rounded="9px"
+      alignItems={useColorModeValue("center", "start" )}
+      justifyContent={useColorModeValue("center", "start" )}
+      px="8px"
+      py="8px"
+      >
+         <VStack >
+         <chakra.p
+          mb={6}
+          fontSize={{ base: "lg", md: "xl" }}
+          color={useColorModeValue("gray.800", "gray.100")}
+          fontWeight="light"
+        >
+        Onboard as
+        </chakra.p>
+        {/* <Image
+         width={40}
+         my={2}
+         src="ethereum.png"
+         alt="ethereum"
+       /> */}
+<Stack
+          direction={{ base: "column", sm: "row" }}
+          mb={{ base: 3, md: 6 }}
+          spacing={2}
+        >
           <Box display="inline-flex" rounded="md" shadow="md">
         
               <chakra.a
-              href="https://app.pranah.co/"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe66XQWZ89M4_WnL41l_xyjPU0BlsqHCS8VeBbS-XaPMetENQ/viewform?usp=pp_url"
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
@@ -144,43 +203,48 @@ const Hero = () => {
                 bg: useColorModeValue("brand.300", "brand.400"),
               }}
             >
-              <MdLaunch/> &nbsp;
-               Onboarding
+              
+               Reader
             </chakra.a>
           </Box>
           
-        </Stack>
 
-    
-      {/* <HStack
-      background="gray.900"
-      rounded="9px"
-      alignItems={useColorModeValue("center", "start" )}
-      justifyContent={useColorModeValue("center", "start" )}
-      px="8px"
-      py="8px"
-      >
-        
-        <Image
-         width={40}
-         my={2}
-         src="ethereum.png"
-         alt="ethereum"
-       />
-       <VStack >
-       <chakra.p mb={-2} color={useColorModeValue("gray.200" , "gray.300")}>
-         audited by
-        </chakra.p>
-       <Image pl={4}
+          <Box display="inline-flex" rounded="md" shadow="md">
+            <chakra.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScCCBHgY2F7kX9p6n2Tk5sxCwrPPD8rTB89ktVZe8gmMKM8Yw/viewform?usp=pp_url"
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              px={5}
+              py={3}
+              
+              border="solid transparent"
+              fontWeight="bold"
+              w="full"
+              rounded="md"
+              color={useColorModeValue("white" , "white")}
+              bg={useColorModeValue("gray.700", "gray.500")}
+              _hover={{
+                bg: useColorModeValue("gray.600", "gray.400"),
+              }}
+            >
+              
+              Author/Publisher
+            </chakra.a>
+       
+          </Box>
+</Stack>
+   
+       {/* <Image pl={4}
         width={40}
         height={8}
         src="qs.png"
 
         alt="quantstamp"
-        />
+        /> */}
        </VStack>
        
-      </HStack> */}
+      </HStack>
       
         
         
