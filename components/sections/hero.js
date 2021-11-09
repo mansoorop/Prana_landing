@@ -123,6 +123,31 @@ const Hero = () => {
             </chakra.a>
        
           </Box>
+
+          <Box display="inline-flex" rounded="md" shadow="md">
+        
+              <chakra.a
+              href="https://app.pranah.co/"
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              px={5}
+              py={3}
+              
+              border="solid transparent"
+              fontWeight="bold"
+              w="full"
+              rounded="md"
+              color={useColorModeValue("white" , "gray.50")}
+              bg={useColorModeValue("brand.400", "brand.300")}
+              _hover={{
+                bg: useColorModeValue("brand.300", "brand.400"),
+              }}
+            >
+              <MdLaunch/> &nbsp;
+               Onboarding
+            </chakra.a>
+          </Box>
           
         </Stack>
 
