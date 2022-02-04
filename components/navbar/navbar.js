@@ -55,9 +55,7 @@ export default function Gslr() {
                   src="prana_final_2.png"
                   alt="Pranah.co"
                 />
-               {/* <Heading as="h3" mx={2} size="lg" color={colorLogo}>
-                Ideamarket.io
-                </Heading> */}
+      
             </chakra.a>
             
           </Flex>
@@ -68,25 +66,7 @@ export default function Gslr() {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-                {/* <Button variant="ghost">Account</Button>
-                <a target="_blank" href="https://docs.ideamarket.io/" rel="noopener noreferrer">
-                <Button variant="ghost">About</Button>
-                </a>
-
-
-                <a target="_blank" href="https://docs.ideamarket.io/faq/faq-prediction-market" rel="noopener noreferrer">
-                 <Button variant="ghost">FAQ</Button>
-                </a>
-
-                
-                <a target="_blank" href="https://discord.com/invite/zaXZXGE4Ke" rel="noopener noreferrer">
-                <Button variant="ghost">Community</Button>
-                </a>
-
-                <Button variant="solid"  
-                color={useColorModeValue("blue.500", "blue.100")}>
-                Connect Wallet
-                </Button> */}
+        
                 
 
             </HStack>
@@ -123,27 +103,7 @@ export default function Gslr() {
                   color={useColorModeValue("gray.900", "white")}
 
                 />
-{/* 
-                <Button w="full" variant="ghost">Account</Button>
 
-                <a target="_blank" href="https://docs.ideamarket.io/" rel="noopener noreferrer">
-                <Button w="full" variant="ghost">About</Button>
-                </a>
-
-
-                <a target="_blank" href="https://docs.ideamarket.io/faq/faq-prediction-market" rel="noopener noreferrer">
-                 <Button w="full" variant="ghost">FAQ</Button>
-                </a>
-
-                
-                <a target="_blank" href="https://discord.com/invite/zaXZXGE4Ke" rel="noopener noreferrer">
-                <Button w="full" variant="ghost">Community</Button>
-                </a>
-
-                <Button variant="solid"  w="full"
-                color={useColorModeValue("blue.500", "blue.100")}>
-                Connect Wallet
-                </Button> */}
                 
               </VStack>
             
