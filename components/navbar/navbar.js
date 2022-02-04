@@ -53,7 +53,7 @@ export default function Gslr() {
                   htmlHeight="300px"
                   htmlWidth="300x"
                   src="prana_final_2.png"
-                  alt="ideamarket.io"
+                  alt="Pranah.co"
                 />
                {/* <Heading as="h3" mx={2} size="lg" color={colorLogo}>
                 Ideamarket.io
