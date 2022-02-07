@@ -102,7 +102,7 @@ const Hero = () => {
 
           <Box display="inline-flex" rounded="md" shadow="md">
             <chakra.a
-              href="https://youtu.be/irXbIYsadpo"
+              href="https://www.youtube.com/watch?v=tOZ6n8xWwm4"
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
@@ -164,14 +164,14 @@ const Hero = () => {
       py="8px"
       >
          <VStack >
-         <chakra.p
+         {/* <chakra.p
           mb={6}
           fontSize={{ base: "lg", md: "xl" }}
           color={useColorModeValue("gray.800", "gray.100")}
           fontWeight="light"
         >
         Onboard as
-        </chakra.p>
+        </chakra.p> */}
         {/* <Image
          width={40}
          my={2}
@@ -183,7 +183,7 @@ const Hero = () => {
           mb={{ base: 3, md: 6 }}
           spacing={2}
         >
-          <Box display="inline-flex" rounded="md" shadow="md">
+          {/* <Box display="inline-flex" rounded="md" shadow="md">
         
               <chakra.a
               href="https://docs.google.com/forms/d/e/1FAIpQLSe66XQWZ89M4_WnL41l_xyjPU0BlsqHCS8VeBbS-XaPMetENQ/viewform?usp=pp_url"
@@ -206,10 +206,10 @@ const Hero = () => {
               
                Reader
             </chakra.a>
-          </Box>
+          </Box> */}
           
 
-          <Box display="inline-flex" rounded="md" shadow="md">
+          {/* <Box display="inline-flex" rounded="md" shadow="md">
             <chakra.a
               href="https://docs.google.com/forms/d/e/1FAIpQLScCCBHgY2F7kX9p6n2Tk5sxCwrPPD8rTB89ktVZe8gmMKM8Yw/viewform?usp=pp_url"
               display="inline-flex"
@@ -232,7 +232,7 @@ const Hero = () => {
               Author/Publisher
             </chakra.a>
        
-          </Box>
+          </Box> */}
 </Stack>
    
        {/* <Image pl={4}
